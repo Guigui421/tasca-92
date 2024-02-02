@@ -1,13 +1,13 @@
 {
-    "image1": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA8CIEAAAAAPD/X1QAAADw//9PRQAAAP///1ICAAD///8PAAAA8P///w8AAP//////DwAA//////8PAAAA8P///w8AAAAA////DwAAAAAA////QgIAAADw//9fJAAAAADw/09FAAAAAADwIgUAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "Nau"
-    },
     "image2": {
         "data": "hwQQABAAAAAAAAAAAAC7AAAAAAAAu8wLAAAAALC7zAsAAAAAu7u7uwAAALC7u7u8AAAAsMy7u7sAAAC7y7u7CwAAu7u7u8sMALu7u7u7uwuwy7y7y7u7ALC7vLvMuwsAsLu7u7sLAACwu7u7uwsAAADMvLu8AAAAALC7uwsAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Meteorit"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA8CIEAAAAAPD/X1QAAADw//9PRQAAAP///1ICAAD/////AAAA8P///w8AAP//////DwAA//////8PAAAA8P///w8AAAAA/////wAAAAAA////QgIAAADw//9fJAAAAADw/09FAAAAAADwIgUAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Nau"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

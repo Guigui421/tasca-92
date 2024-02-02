@@ -1,7 +1,7 @@
 namespace SpriteKind {
     export const Meteorit = SpriteKind.create()
 }
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . 2 1 2 . . . . . . 
@@ -20,6 +20,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, 0, -50)
+    music.play(music.melodyPlayable(music.pewPew), music.PlaybackMode.UntilDone)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(mySprite2, effects.fire, 1000)
@@ -37,7 +38,7 @@ let mySprite: Sprite = null
 mySprite = sprites.create(assets.image`Nau`, SpriteKind.Player)
 mySprite.setPosition(78, 93)
 controller.moveSprite(mySprite, 100, 100)
-mySprite.setVelocity(-3, 2)
+mySprite.setVelocity(0, 0)
 scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -161,7 +162,7 @@ scene.setBackgroundImage(img`
     8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
     `)
 mySprite.setStayInScreen(true)
-info.setLife(3)
+info.setLife(5)
 info.setScore(0)
 game.onUpdateInterval(1000, function () {
     mySprite2 = sprites.createProjectileFromSide(assets.image`Meteorit`, 0, 50)
